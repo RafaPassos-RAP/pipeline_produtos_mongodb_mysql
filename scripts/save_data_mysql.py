@@ -83,3 +83,6 @@ if __name__ == "__main__":
     # lendo e adicionando os dados
     df = read_csv("../data/tabela_livros.csv")
     add_product_data(cnx, cursor, df, "db_produtos_teste", "tb_livros")
+
+    cursor.close()
+    cnx.close()
